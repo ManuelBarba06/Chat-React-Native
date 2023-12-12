@@ -1,9 +1,21 @@
 import { Text, View } from "react-native"
 
+import { styles } from "./MessageTheme"
+
 const Message = () => {
   return (
-    <View>
-        <Text>Hello</Text>
+    <View
+        style={styles.messageContainer}
+    >
+        <View
+            style={styles.message}
+        >
+            <Text
+                 style={styles.text}
+            >
+                Hello
+            </Text>
+        </View>
     </View>
   )
 }
